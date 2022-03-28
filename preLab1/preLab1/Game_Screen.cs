@@ -21,6 +21,17 @@ namespace preLab1
         {
             Application.Exit();
         }
+
+        private void sETTINGSToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new Settings().Show();
+        }
+
+        private void Game_Screen_Load(object sender, EventArgs e)
+        {
+            Settings settings = new Settings();
+            settings.TopMost = true;
+        }
     }
 
 }

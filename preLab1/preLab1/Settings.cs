@@ -34,9 +34,14 @@ namespace preLab1
             checkBox3.Checked = Properties.Settings.Default.S_Square;
             textBox1.Text = Properties.Settings.Default.Custom_X.ToString();
             textBox2.Text = Properties.Settings.Default.Custom_Y.ToString();
+            C_Red.Checked = Properties.Settings.Default.C_Red;
+            C_Green.Checked = Properties.Settings.Default.C_Green;
+            C_Blue.Checked = Properties.Settings.Default.C_Blue;
 
             Properties.Settings.Default.Save();
         }
+
+        
 
         public void SaveSettings()
         {
@@ -103,6 +108,8 @@ namespace preLab1
             TextBoxCheck();
         }
 
+        
+
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
             if (textBox1.Text == "")
@@ -124,6 +131,25 @@ namespace preLab1
         private void Settings_Load(object sender, EventArgs e)
         {
             getSettings();
+            this.TopMost = true;
+        }
+
+        private void C_Red_CheckedChanged(object sender, EventArgs e)
+        {
+            Properties.Settings.Default.C_Red = C_Red.Checked;
+            TextBoxCheck();
+        }
+
+        private void C_Green_CheckedChanged(object sender, EventArgs e)
+        {
+            Properties.Settings.Default.C_Green= C_Green.Checked;
+            TextBoxCheck();
+        }
+
+        private void C_Blue_CheckedChanged(object sender, EventArgs e)
+        {
+            Properties.Settings.Default.C_Blue = C_Blue.Checked;
+            TextBoxCheck();
         }
     }
 }

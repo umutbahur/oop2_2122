@@ -44,6 +44,8 @@ namespace preLab1
         {
             this.ActiveControl = txtUsername;
             this.AcceptButton = button1;
+            Settings settings = new Settings();
+            settings.TopMost = true;
         }
 
         private void settingsMenu_Click(object sender, EventArgs e)
