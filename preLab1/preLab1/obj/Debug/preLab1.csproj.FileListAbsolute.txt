@@ -9,3 +9,15 @@ C:\Users\umutb\source\repos\oop2_2122\preLab1\preLab1\bin\Debug\preLab1.exe
 C:\Users\umutb\source\repos\oop2_2122\preLab1\preLab1\bin\Debug\preLab1.pdb
 C:\Users\umutb\source\repos\oop2_2122\preLab1\preLab1\obj\Debug\preLab1.exe
 C:\Users\umutb\source\repos\oop2_2122\preLab1\preLab1\obj\Debug\preLab1.pdb
+D:\school\OOP2_LAB\preLab1\preLab1\obj\Debug\preLab1.csprojAssemblyReference.cache
+D:\school\OOP2_LAB\preLab1\preLab1\obj\Debug\preLab1.Settings.resources
+D:\school\OOP2_LAB\preLab1\preLab1\obj\Debug\preLab1.Game_Screen.resources
+D:\school\OOP2_LAB\preLab1\preLab1\obj\Debug\preLab1.Login.resources
+D:\school\OOP2_LAB\preLab1\preLab1\obj\Debug\preLab1.Properties.Resources.resources
+D:\school\OOP2_LAB\preLab1\preLab1\obj\Debug\preLab1.csproj.GenerateResource.cache
+D:\school\OOP2_LAB\preLab1\preLab1\obj\Debug\preLab1.csproj.CoreCompileInputs.cache
+D:\school\OOP2_LAB\preLab1\preLab1\obj\Debug\preLab1.exe
+D:\school\OOP2_LAB\preLab1\preLab1\obj\Debug\preLab1.pdb
+D:\school\OOP2_LAB\preLab1\preLab1\bin\Debug\preLab1.exe.config
+D:\school\OOP2_LAB\preLab1\preLab1\bin\Debug\preLab1.exe
+D:\school\OOP2_LAB\preLab1\preLab1\bin\Debug\preLab1.pdb
