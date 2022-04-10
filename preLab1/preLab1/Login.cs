@@ -25,6 +25,9 @@ namespace preLab1
             {
                 new Game_Screen().Show();
                 this.Hide();
+                Properties.Settings.Default.Username = txtUsername.Text;
+                Properties.Settings.Default.Password = txtPassword.Text;
+                SaveSettings();
             }
             else
             {
@@ -46,12 +49,43 @@ namespace preLab1
             this.AcceptButton = button1;
             Settings settings = new Settings();
             settings.TopMost = true;
+            getSettings();
         }
 
         private void settingsMenu_Click(object sender, EventArgs e)
         {
             new Settings().Show();
             this.Hide();
+        }
+
+        private void txtUsername_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = !(char.IsLetter(e.KeyChar) || e.KeyChar == (char)Keys.Back);
+        }
+
+        private void chk_ShowPassword_CheckedChanged(object sender, EventArgs e)
+        {
+            if(chk_ShowPassword.Checked)
+            {
+                txtPassword.PasswordChar = '\0';
+            }
+            else
+            {
+                txtPassword.PasswordChar = '*';
+            }
+        }
+
+        public void getSettings()
+        {
+            txtUsername.Text = Properties.Settings.Default.Username;
+            txtPassword.Text = Properties.Settings.Default.Password;
+
+            Properties.Settings.Default.Save();
+        }
+
+        public void SaveSettings()
+        {
+            Properties.Settings.Default.Save();
         }
     }
 }
