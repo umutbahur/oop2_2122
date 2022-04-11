@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace preLab1
 {
@@ -31,6 +32,18 @@ namespace preLab1
         {
             Settings settings = new Settings();
             settings.TopMost = true;
+        }
+
+        private void StripManage_Click(object sender, EventArgs e)
+        {
+            new Manage().Show();
+            this.Hide();
+        }
+
+        private void pROFILEToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new Profile().Show();
+            this.Hide();
         }
     }
 
